@@ -511,21 +511,35 @@ const es: typeof en = {
         starterFeatures: [
           "Hasta 100 leads prospectados al mes",
           "Enriquecimiento básico de empresas",
-          "Emails personalizados listos para revisar y enviar con tu aprobación",
+          "Emails personalizados listos para REVISAR y ENVIAR tú mismo desde tu correo",
           "Sincronización con tu CRM",
-          "Sin suscripciones adicionales: pagas solo el plan",
+          "Sin suscripciones adicionales: pagas solo el plan (envío manual, sin automatización)",
         ],
         proFeatures: [
-          "Prospección ilimitada",
-          "Modelos avanzados de personalización",
+          "Hasta 500 contactos verificados por mes (emails validados, sin rebotes)",
+          "Personalización avanzada con modelos IA",
           "Calificación predictiva de oportunidades",
-          "Envío 100% automatizado multi-canal (email + LinkedIn)",
-          "Seguimiento automático de leads con secuencias",
+          "Envío automatizado por email con secuencias y seguimiento automático de leads",
           "Agenda automática de reuniones",
-          "Suscripciones incluidas: WarmUp, dominio espejo anti-spam, Workspace de envío y modelos IA",
+          "Incluye: dominio de envío dedicado con calentamiento anti-spam progresivo, workspace de envío y modelos IA",
+          "Add-on opcional: Outreach en LinkedIn (+$99/mes)",
         ],
         disclaimer:
-          "Starter es ideal para arrancar: tienes el control total de cada envío y seguimiento. Pro desbloquea la automatización completa — envío, calentamiento de correos y seguimiento de leads sin intervención.",
+          "Starter es ideal para arrancar: revisas y envías cada mensaje desde tu propio correo, sin suscripciones extra. El upgrade a Pro desbloquea envío automatizado, verificación de emails, calentamiento de dominio anti-spam y seguimiento automático de leads.",
+        custom: {
+          description:
+            "A medida para operaciones que prospectan y envían a gran escala.",
+          features: [
+            "Todo lo de Pro",
+            "Envíos masivos diarios (100+ emails/día) con múltiples dominios de envío dedicados",
+            "Múltiples buzones de correo con rotación automática",
+            "Infraestructura de deliverability dedicada (calentamiento continuo y monitoreo anti-spam)",
+            "Verificación de emails a escala",
+            "Agentes a la medida, integraciones con tu stack, modelos dedicados y datos privados",
+            "SLA y soporte prioritario",
+            "Precio según alcance",
+          ],
+        },
         proBadge: "Mejor valor",
       },
       "asesor-comercial-ia": {

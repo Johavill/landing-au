@@ -89,7 +89,9 @@ export default async function EmployeePage({
   const category = findCategory(categories, employee);
   const Icon = employee.icon;
   const customPlan = dict.catalog.custom;
-  const customFeatures = dict.catalog.custom.features;
+  const customFeatures = employee.custom?.features ?? customPlan.features;
+  const customDescription =
+    employee.custom?.description ?? customPlan.description;
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white antialiased">
@@ -298,7 +300,7 @@ export default async function EmployeePage({
                 {customPlan.value}
               </div>
               <p className="mt-3 text-sm leading-relaxed text-white/60">
-                {customPlan.description}
+                {customDescription}
               </p>
               <ul className="mt-6 flex flex-col gap-3">
                 {customFeatures.map((feature) => (

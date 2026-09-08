@@ -509,21 +509,35 @@ const en = {
         starterFeatures: [
           "Up to 100 prospected leads per month",
           "Basic company enrichment",
-          "Personalized emails ready to review and send with your approval",
+          "Personalized emails ready for you to REVIEW and SEND from your own inbox",
           "Sync with your CRM",
-          "No extra subscriptions: you only pay for the plan",
+          "No extra subscriptions: you pay only for the plan (manual sending, no automation)",
         ],
         proFeatures: [
-          "Unlimited prospecting",
-          "Advanced personalization models",
+          "Up to 500 verified contacts per month (validated emails, no bounces)",
+          "Advanced AI personalization models",
           "Predictive opportunity scoring",
-          "100% automated multi-channel outreach (email + LinkedIn)",
-          "Automatic lead follow-up with sequences",
+          "Automated email sending with sequences and automatic lead follow-up",
           "Automatic meeting booking",
-          "Subscriptions included: WarmUp, anti-spam mirror domain, sending workspace and AI models",
+          "Includes: dedicated sending domain with progressive anti-spam warm-up, sending workspace, and AI models",
+          "Optional add-on: LinkedIn outreach (+$99/month)",
         ],
         disclaimer:
-          "Starter is ideal to start: you keep full control over every send and follow-up. Pro unlocks full automation — sending, email warm-up and lead follow-up with no manual work.",
+          "Starter is ideal to start: you review and send each message from your own inbox, with no extra subscriptions. Upgrading to Pro unlocks automated sending, email verification, anti-spam domain warm-up and automatic lead follow-up.",
+        custom: {
+          description:
+            "Bespoke for operations that prospect and send at scale.",
+          features: [
+            "Everything in Pro",
+            "High-volume daily sending (100+ emails/day) across multiple dedicated sending domains",
+            "Multiple mailboxes with automatic rotation",
+            "Dedicated deliverability infrastructure (ongoing warm-up and anti-spam monitoring)",
+            "Email verification at scale",
+            "Bespoke agents, integrations with your stack, dedicated models and private data",
+            "SLA and priority support",
+            "Pricing depends on scope",
+          ],
+        },
         proBadge: "Best value",
       },
       "asesor-comercial-ia": {

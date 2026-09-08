@@ -28,6 +28,7 @@ export type Employee = {
   featured?: boolean;
   proBadge?: string;
   disclaimer?: string;
+  custom?: { description: string; features: string[] };
 };
 
 export type Category = {
@@ -166,6 +167,12 @@ export const getCategories = cache(function getCategories(
       const content = dict.catalog.employees[
         m.slug as keyof Messages["catalog"]["employees"]
       ];
+      const contentMeta = content as {
+        proBadge?: string;
+        disclaimer?: string;
+        custom?: { description?: string; features?: string[] };
+      };
+      const custom = contentMeta.custom;
       return {
         slug: m.slug,
         name: content.name,
@@ -179,8 +186,15 @@ export const getCategories = cache(function getCategories(
         proPrice: m.proPrice,
         icon: m.icon,
         featured: m.featured,
-        proBadge: (content as { proBadge?: string }).proBadge,
-        disclaimer: (content as { disclaimer?: string }).disclaimer,
+        proBadge: contentMeta.proBadge,
+        disclaimer: contentMeta.disclaimer,
+        custom:
+          custom && custom.features
+            ? {
+                description: custom.description ?? "",
+                features: custom.features,
+              }
+            : undefined,
       };
     });
 
